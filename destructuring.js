@@ -12,12 +12,11 @@ let ages = [30, 26, 27];
 // let mary = ages[1];
 // let joe = ages[2];
 
-//* -------------------------------------------------------------------------------------------------------------- *//
-
 
 // With Destructuring - Arrays
 let [john, mary, joe] = ages; 
 console.log(john, mary, joe);
+//* -------------------------------------------------------------------------------------------------------------- *//
 
 
 //** <h1 Destructuring objects h1> **\\
@@ -60,6 +59,18 @@ console.log(favorite);
 console.log(secondFavorite);
 console.log(others);
 
+let favoriteFoods = {
+    brian: "pizza",
+    anna: "pasta",
+    sarah: "vegetarian",
+    andrea: "steak",
+};
+
+let {brian, anna, ...rest} = favoriteFoods;
+console.log(brian);
+console.log(anna); 
+console.log(rest); 
+ 
 
 
 
